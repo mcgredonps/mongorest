@@ -1,0 +1,48 @@
+{
+    "sortie_description_format":
+            {
+                "format": "robot_sortie",
+                "version": "1.0"
+            },
+            
+    "exercise_information":
+            {
+                "exercise_name": "JIFX_25",
+                "exercise_start_date": "2012-04-21T18:25:43-05:00",
+                "location": "Camp Roberts",
+                "sponsor_organization": "Naval Postgraduate School"
+            },
+    
+    "robot_information":
+            {
+               "robot_type": "zypher",
+               "software": "ros",
+               "robot_owner":
+                   {
+                     "name": "NPS",
+                     "web_site": "url"
+                   }
+            },
+            
+    "sortie_data":    
+            {
+               "gpx_file": "https://some_server_name.edu/blah_data.gpx",
+               "start_time": "2014-04-21T18:25:43-05:00",
+               "end_time": "2014-04-21T18:35:43-05:00",
+        
+               "geographic_extent":
+                    { "max_latitude": 36.5,
+                      "min_latitude": 36.3,
+                      "max_longitiude": -121.3,
+                      "min_longitude": -121.5
+                    },
+                    
+               "telemetry": 
+                       [ 
+                         {"telemetry_format":"mav_link", "url":"BIN1_BIN"}, 
+                         {"telemetry_format": "csv_blah", "url":"http://something"},
+                         {"telemetry_format": "netcdf", "url": "mission.nc"},
+                         {"telemetry_format": "mp4_video", "url": "aVideo.mp4"}
+                       ]
+            }
+}

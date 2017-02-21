@@ -1,0 +1,21 @@
+{
+  "name": "mongorest",
+  "version": "1.0.0",
+  "description": "MongoDB REST interface for adding json documents to mongo",
+  "main": "index.js",
+  "dependencies": {
+    "assert": "^1.4.1",
+    "connect": "^3.6.0",
+    "express": "^4.14.1",
+    "mongo": "^0.1.0",
+    "mongodb": "^2.2.24",
+    "mongoose": "^4.8.4",
+    "serve-static": "^1.11.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Don McGregor <mcgredo@nps.edu> (https://movesinstitute.org/)",
+  "license": "ISC"
+}
