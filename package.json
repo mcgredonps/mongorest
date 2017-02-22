@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "assert": "^1.4.1",
+    "body-parser": "^1.16.1",
     "connect": "^3.6.0",
     "express": "^4.14.1",
     "mongo": "^0.1.0",
