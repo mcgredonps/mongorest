@@ -1,0 +1,51 @@
+<html>
+   <body>
+      <form action="http://localhost:3000/REST/mission" method="post" enctype="multipart/form-data">
+         <fieldset>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" value="2015-12-12" /><br>
+
+            <label for="exercise">Exercise:</label>
+            <select name="exercise">
+                <option value="FX25">FX25</option>
+                <option value="FX26">FX26</option>
+                <option value="FX27">FX27</option>
+                <option value="FX28" selected>FX28</option>
+            </select><br>
+
+            <label for="mission">Mission:</label>
+            <input type="number" id="mission" name="mission" value="1" />
+            <br />
+            
+            <label for="sortie">Sortie:</label>
+            <input type="number" id="sortie" name="sortie" placeholder="1" />
+            <br />
+
+            <label for="uavid">UAV ID:</label>
+            <input type="number" id="uavid" name="uavid" placeholder="1" />
+            <br />
+
+            <label for="gopro">GoPro:</label>
+            <input type="number" id="gopro" name="gopro" placeholder="1"><br>
+
+            <label for="takeoff">Takeoff Time</label>
+            <input type="number" id="takeoff" name="takeoff" placeholder="0900"/><br>
+            
+            <label for="landing">Landing Time</label>
+            <input type="number" id="landing" name="landing" placeholder="0920"/><br>
+           
+            <label for="red">Stack 1</label>
+            <input type="radio" id="1" name="stack" value="1"/><br>
+            <label for="blue">Stack 2</label>
+            <input type="radio" id="2" name="stack" value="2"/><br>
+            <label for="neither">Neither</label>
+            <input type="radio" id="0" name="stack" value="0" checked/><br>
+
+            <label for="comments">Comments:</label>
+            <textarea name="comments" id="comments"></textarea>
+            <br />
+            <input type="submit" value="Submit" />
+         </fieldset>
+      </form>
+   </body>
+</html>

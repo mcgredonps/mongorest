@@ -1,4 +1,6 @@
 {
+    "sortie_id":4321,
+    
     "sortie_description_format":
             {
                 "format": "robot_sortie",

@@ -14,6 +14,7 @@ var mongoose = require('mongoose');
 
 // Mongo database driver
 var MongoClient = require('mongodb').MongoClient;
+var ObjectID = require('mongodb').ObjectID;
 var robodataDatabase;
 
 // BodyParser allows us to get data from a POST
@@ -39,14 +40,23 @@ router.use(function(req, res, next)
 
 // Handle a post operation
 router.route('/mission')
+
         // ====== POST verb
         .post(function(req, res)
         {
+          var submittedData = req.body;
+          
           console.log("got api post");
-          var obj = {};
-          obj.name = req.body.name;
+          
+          // This is kinda questionable, but a unique ID that's
+          // not the mongoDB generated key isn't all bad.
+          uniqueObjectID = new ObjectID();
+          submittedData['sortie_id'] = uniqueObjectID;
+          
+          console.log(req.body);
           // commit to database
-          res.json({message:"post done"});
+          writeToDatabase("robodata", submittedData);
+          res.json({message:"post done, written to db"});
         })
         
         // ===== GET verb
@@ -117,8 +127,8 @@ MongoClient.connect(url, function(err, db)
 /**
  * Uses the already-created robodatabase connection to retrieve
  * a collection, and then write data to it.
- * @param String collectionName name of collection to write to
- * @param String data json data to write to the collection
+ * @param {String} collectionName name of collection to write to
+ * @param {String} data json data to write to the collection
  * @returns {undefined}
  */
 function writeToDatabase(collectionName, data)
@@ -145,11 +155,11 @@ var server = app.listen(HTTP_PORT, function()
  */
 app.get('/listUsers', function(req, res)
 {
-   fs.readFile(__dirname + '/' + "SortieFormat.json", "utf8", function(err, data)
+   fs.readFile(__dirname + '/' + "form.html", "utf8", function(err, data)
    {
-       //console.log("data is:", data);
-       jsonData = JSON.parse(data);
-       writeToDatabase("robot_missions", jsonData);
+       console.log("data is:", data);
+       //jsonData = JSON.parse(data);
+       //writeToDatabase("robot_missions", jsonData);
        
        res.end(data);
    });
