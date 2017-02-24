@@ -1,0 +1,11 @@
+{ "fields": 
+   { "date": "2016-11-01",
+     "exercise": "FX28",
+     "mission": "7",
+     "sortie": "1",
+     "uavid": "76",
+     "gopro": "",
+     "takeoff": "1436",
+     "landing": "1439",
+     "stack": "0",
+     "comments": "push WP3 on rails pass MCF" } }

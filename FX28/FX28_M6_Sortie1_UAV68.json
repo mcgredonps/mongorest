@@ -1,0 +1,11 @@
+{ "fields": 
+   { "date": "2016-11-01",
+     "exercise": "FX28",
+     "mission": "6",
+     "sortie": "1",
+     "uavid": "68",
+     "gopro": "63",
+     "takeoff": "1415",
+     "landing": "1418",
+     "stack": "0",
+     "comments": "payload on, push to WP5 on rails" } }

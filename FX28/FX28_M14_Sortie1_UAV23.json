@@ -1,0 +1,11 @@
+{ "fields": 
+   { "date": "2016-11-02",
+     "exercise": "FX28",
+     "mission": "14",
+     "sortie": "1",
+     "uavid": "23",
+     "gopro": "83",
+     "takeoff": "1438",
+     "landing": "1510",
+     "stack": "1",
+     "comments": "" } }

@@ -1,0 +1,11 @@
+{ "fields": 
+   { "date": "2016-11-01",
+     "exercise": "FX28",
+     "mission": "5",
+     "sortie": "1",
+     "uavid": "63",
+     "gopro": "63",
+     "takeoff": "1344",
+     "landing": "1347",
+     "stack": "0",
+     "comments": "Pass MCF flew with payload disconnected to troubleshoot, functioned normally" } }

@@ -1,0 +1,11 @@
+{ "fields": 
+   { "date": "2016-11-01",
+     "exercise": "FX28",
+     "mission": "1",
+     "sortie": "1",
+     "uavid": "13",
+     "gopro": "69",
+     "takeoff": "1232",
+     "landing": "1237",
+     "stack": "0",
+     "comments": "Seems to be not taking mission in auto. Fail MCF. kille throttle, wings level" } }

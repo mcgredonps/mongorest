@@ -17,34 +17,35 @@
     
     "robot_information":
             {
-               "robot_type": "zypher",
-               "software": "ros",
+               "robot_type": "zephyr",
+               "software": "ROS",
                "robot_owner":
                    {
                      "name": "NPS",
                      "web_site": "url"
-                   }
+                   },
+               "gopro_id": null,
+               "uav_id": null,
+               "individual_robot_name": "Bob"
             },
             
     "sortie_data":    
             {
-               "gpx_file": "https://some_server_name.edu/blah_data.gpx",
+               "mission": -1,
+               "gpx_file": null,
                "start_time": "2014-04-21T18:25:43-05:00",
                "end_time": "2014-04-21T18:35:43-05:00",
         
                "geographic_extent":
-                    { "max_latitude": 36.5,
-                      "min_latitude": 36.3,
-                      "max_longitiude": -121.3,
-                      "min_longitude": -121.5
+                    { "max_latitude": null,
+                      "min_latitude": null,
+                      "max_longitiude": null,
+                      "min_longitude": null
                     },
                     
                "telemetry": 
                        [ 
-                         {"telemetry_format":"mav_link", "url":"BIN1_BIN"}, 
-                         {"telemetry_format": "csv_blah", "url":"http://something"},
-                         {"telemetry_format": "netcdf", "url": "mission.nc"},
-                         {"telemetry_format": "mp4_video", "url": "aVideo.mp4"}
+                         
                        ]
             }
 }

@@ -1,0 +1,11 @@
+{ "fields": 
+   { "date": "2016-11-01",
+     "exercise": "FX28",
+     "mission": "4",
+     "sortie": "1",
+     "uavid": "42",
+     "gopro": "69",
+     "takeoff": "1333",
+     "landing": "1333",
+     "stack": "0",
+     "comments": "Bad batteries. Crash landed with payload disconected" } }

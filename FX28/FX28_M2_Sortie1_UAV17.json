@@ -1,0 +1,12 @@
+{ "fields": 
+   { "date": "2016-11-01",
+     "exercise": "FX28",
+     "mission": "2",
+     "sortie": "1",
+     "uavid": "17",
+     "gopro": "67",
+     "takeoff": "1243",
+     "landing": "1245",
+     "optional": "",
+     "stack": "0",
+     "comments": "MCF Fail didn\"t transiontion to auto" } }
